@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+</head>
+<body>
+    <form action='/cities/<%=city._id%>?_method=PUT' method='POST'>
+        <input type='text' name='name' value='<%=city.name%>'>
+        <input type='text' name='state' value='<%=city.state%>'>
+        <input type='text' name='population' value='<%=city.population%>'>
+        <button type='submit'>Submit Changes</button>
+    </form>
+</body>
+</html>
